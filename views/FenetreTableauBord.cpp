@@ -20,6 +20,7 @@ FenetreTableauBord::FenetreTableauBord(Client* client, QWidget* parent)
     : QMainWindow(parent), client(client) {
 
     setWindowTitle("BankVision — " + (client ? client->getNomComplet() : "Tableau de bord"));
+    setWindowIcon(QIcon(":/images/icon.jpg"));
     setMinimumSize(1100, 700);
 
     QScreen* screen = QApplication::primaryScreen();
